@@ -1,0 +1,35 @@
+
+
+/* NAŠE STYLOVÁNÍ */
+* {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+.navbar .nav > li > a,
+.navbar .navbar-header > a.navbar-brand {
+    color:  #558b2f;          
+}
+nav {
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.jumbotron{
+
+  background-color: #c5e1a5 !important;
+  
+
+}
+.btn-primary {
+  background-color: #689f38 !important;
+  color: #fff;
+  border-color: #8aaf5a;
+}
+
+div.row{
+  padding-left: 0px !important
+}
+.container-searching{
+  background-image: url('beach.jpg');
+}

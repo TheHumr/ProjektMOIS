@@ -1,0 +1,89 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<hr>
+<h1>Hledat</h1>
+<header class="jumbotron hero-spacer">
+    <div class="row">
+        <div class="col-lg-12">
+            <form action="/search" asp-area="" asp-controller="Search" asp-action="Index">
+                <div class="col-md-3 col-sm-6">
+                    <label>
+                        Destinace:
+                    </label>
+                    <input type="text" class="form-control" value="Řecko" name="destination" />
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <label>
+                        Počet dní:
+                    </label>
+                    <input type="number" min="0" class="form-control" value="7" name="days" />
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="form-group">
+                        <label>
+                            Datum odjezdu
+                        </label>
+                        <input type="date" class="form-control" value="2017-04-13" name="date" />
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="form-group">
+                        <label>
+                            Maximální cena
+                        </label>
+                        <input type="number" class="form-control" value="7000" min="5000" step="500" name="prize" />
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 pull-right">
+                    <div class="form-group">
+                        <p>
+                            <button class="btn btn-primary btn-large pull-right" type="submit">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true">
+                                </span>&nbsp;Hledat
+                            </button>
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</header>
+<hr>
+<!-- Title -->
+<div class="row">
+    <div class="col-lg-12">
+        <h3>Last minute</h3>
+    </div>
+</div>
+<!-- /.row -->
+<!-- Page Features -->
+<div class="row text-center">
+
+    @foreach (var t in ViewBag.Trips)
+    {
+        <div class="col-md-3 col-sm-6 hero-feature">
+            <div class="thumbnail">
+                <img src="/Content/beach.jpg" alt="">
+                <div class="caption">
+                    <h3>@t.Destination</h3>
+                    <h4>                                                                                                                                                                    <b>20.4. - 28.4.2016</b>                                                                                                                                              </h4>
+                    <p>
+                        @t.Description
+                    </p>
+                    <p>
+                        <b>Cena: @t.Prize ,- </b>
+                    </p>
+                    <p>
+                        <a href="/trip/register?id=@t.Id" class="btn btn-primary">Registrovat</a>
+                        <a href="/trip?id=@t.Id" class="btn btn-default">Více informací</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+<!-- /.row -->
+<hr>

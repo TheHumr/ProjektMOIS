@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="ProjektMOIS"
+                   namespace="ProjektMOIS.Model">
+
+  <class name="Trip" table="trip">
+    <id name="Id">
+      <generator class="native"></generator>
+    </id>
+
+    <property name="Destination" />
+    <property name="Description" />
+    <property name="Length" />
+    <property name="RoomSize" />
+    <property name="DateStart" />
+    <property name="DateEnd" />
+    <property name="Category" />
+    <property name="Meals" />
+    <property name="Stars" />
+    <property name="Prize" />
+    <property name="TripType" />
+    <property name="TransferType" />
+    <property name="AccommodationType" />
+    
+  </class>
+</hibernate-mapping>

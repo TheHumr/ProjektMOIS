@@ -1,0 +1,126 @@
+@{
+    ViewBag.Title = "Trip detail";
+}
+
+<hr>
+<h1>@ViewBag.Trip.Destination</h1>
+<header class="jumbotron ">
+    <div class="container form-container">
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label class="control-label">
+                    Typ zájezdu
+                </label>
+                <p><b>@ViewBag.Trip.TripType</b></p>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">
+                    Cílová zemì
+                </label>
+                <p><b>@ViewBag.Trip.Destination</b></p>
+            </div>
+
+
+            <div class="form-group">
+                <label class="control-label">
+                    Délka
+                </label>
+                <p><b>@ViewBag.Trip.Length dní</b></p>
+            </div>
+
+
+            <div class="form-group">
+                <label class="control-label">
+                    Typ dopravy
+                </label>
+                <p><b>@ViewBag.Trip.TransferType</b></p>
+            </div>
+
+
+            <div class="form-group">
+                <label class="control-label">
+                    Cena
+                </label>
+                <p><b>@ViewBag.Trip.Prize,- Kè</b></p>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label class="control-label">
+                    Kategorie
+                </label>
+                <p><b>@ViewBag.Trip.Category</b></p>
+            </div>
+
+
+            <div class="form-group">
+                <label class="control-label">
+                    Stravování
+                </label>
+                <p><b>@ViewBag.Trip.Meals</b></p>
+            </div>
+
+
+            <div class="form-group">
+                <label class="control-label">
+                    Ubytování
+                </label>
+                <p><b>@ViewBag.Trip.AccommodationType ****</b></p>
+            </div>
+
+
+            <div class="form-group">
+                <label class="control-label">
+                    Kapacita osob
+                </label>
+                <p><b>@ViewBag.Trip.RoomSize</b></p>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">
+                    Datum zaèátku
+                </label>
+                <p><b>@ViewBag.Trip.DateStart</b></p>
+            </div>
+
+        </div>
+
+
+        <div class="col-sm-12">
+            <div class="form-group">
+                <label class="control-label">
+                    Popis
+                </label>
+                <p>@ViewBag.Trip.Description</p>
+            </div>
+        </div>
+
+        <div class="col-sm-12">
+            <div class="form-group">
+                <label class="control-label">
+                    Dostupnost
+                </label>
+                <p><b>Zbývajících míst 6</b></p>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <p>
+                    <a class="btn btn-primary btn-large ">
+                        <span class="glyphicon glyphicon-ok" aria-hidden="true">
+                        </span>&nbsp;Pøihlásit se
+                    </a>
+                </p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</header>
+
+<hr>

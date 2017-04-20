@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Search";
+}
+
+<hr>
+<h1>Výsledky hledání </h1>
+<!-- Title -->
+<div class="row">
+    <div class="col-lg-12">
+        <h3>Latest Features</h3>
+    </div>
+</div>
+<!-- /.row -->
+<!-- Page Features -->
+<div class="row text-center">
+    @foreach (var t in ViewBag.Trips)
+    {
+        <div class="col-md-3 col-sm-6 hero-feature">
+            <div class="thumbnail">
+                <img src="/Content/beach.jpg" alt="">
+                <div class="caption">
+                    <h3>@t.Destination</h3>
+                    <h4>                                                                                                                                                                    <b>20.4. - 28.4.2016</b>                                                                                                                                              </h4>
+                    <p>
+                        @t.Description
+                    </p>
+                    <p>
+                        <b>Cena: @t.Prize ,- </b>
+                    </p>
+                    <p>
+                        <a href="/trip/register?id=@t.Id" class="btn btn-primary">Registrovat</a>
+                        <a href="/trip?id=@t.Id" class="btn btn-default">Více informací</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+<!-- /.row -->
+<hr>
