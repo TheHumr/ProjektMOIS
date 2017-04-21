@@ -29,5 +29,14 @@ namespace ProjektMOIS.Controllers
 
             return View();
         }
+
+        // GET: Trip/Create
+
+        public ActionResult Create()
+        {
+
+            return View();
+        }
+
     }
 }

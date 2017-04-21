@@ -1,0 +1,160 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+<hr>
+<h1>Nový zájezd</h1>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="form-group">
+            <label class="control-label">
+                Název zájezdu
+            </label>
+            <input class="form-control" type="text" value="" placeholder="Dovolená pro rodinu v Řecku" />
+        </div>
+    </div>
+    <div class="panel-body">
+
+        <div class="form-container">
+
+            <div class="form-group">
+                <label class="control-label">
+                    Typ zájezdu
+                </label>
+                <select class="form-control">
+                    <option>Pobytové zájezdy</option>
+                    <option>Blízká moře</option>
+                    <option>Lyžařské zájezdy</option>
+                    <option>Poznávací zájezdy</option>
+                    <option>...</option>
+                </select>
+
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">
+                    Cílová země
+                </label>
+                <input class="form-control" type="text" placeholder="Řecko" />
+            </div>
+
+
+            <div class="form-group">
+                <label class="control-label">
+                    Délka (dny)
+                </label>
+                <input class="form-control" type="number" value="5" min="0" />
+            </div>
+
+
+            <div class="form-group">
+                <label class="control-label">
+                    Typ dopravy
+                </label>
+                <select class="form-control">
+                    <option>Autobusem</option>
+                    <option>Letadlem</option>
+                    <option>...</option>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <label class="control-label">
+                    Cena
+                </label>
+                <input class="form-control" type="number" value="5000" min="5000" step="500" />
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">
+                    Kategorie
+                </label>
+                <select class="form-control">
+                    <option>First minute</option>
+                    <option>Last minute</option>
+                    <option>...</option>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <label class="control-label">
+                    Stravování &nbsp;&nbsp;&nbsp;
+                </label>
+                <label class="checkbox-inline"><input type="checkbox" value="">Snídaně</label>
+                <label class="checkbox-inline"><input type="checkbox" value="">Obědy</label>
+                <label class="checkbox-inline"><input type="checkbox" value="">Večeře</label>
+            </div>
+
+
+            <div class="form-group">
+                <label class="control-label">
+                    Ubytování
+                </label>
+                <select class="form-control">
+                    <option>Hotel ****</option>
+                    <option>Hotel ***</option>
+                    <option>Motel</option>
+                    <option>...</option>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <label class="control-label">
+                    Kapacita osob
+                </label>
+                <input class="form-control" type="number" value="10" min="20" />
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">
+                    Datum začátku
+                </label>
+                <input type="date" class="form-control" value="2017-04-13" />
+            </div>
+
+
+
+            <div class="form-group">
+                <label class="control-label">
+                    Popis
+                </label>
+                <textarea class="form-control" rows="5" placeholder="Chtěli byste se podívat do Řecka? S námi můžete i s celou rodinou. Zájezd je..."></textarea>
+            </div>
+
+
+            <div class="form-group">
+                <p>
+                    <a class="btn btn-large ">
+                        <span class="glyphicon glyphicon-paperclip" aria-hidden="true">
+                        </span>&nbsp;Nahrát obrázky k zájezdu
+                    </a>
+                </p>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    <a class="btn btn-danger btn-large pull-right">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true">
+                        </span>&nbsp;Zrušit
+                    </a>
+                </p>
+                <p>
+                    <a class="btn btn-primary btn-large pull-right">
+                        <span class="glyphicon glyphicon-ok" aria-hidden="true">
+                        </span>&nbsp;Uložit
+                    </a>
+                </p>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</div>
+
+<hr>
